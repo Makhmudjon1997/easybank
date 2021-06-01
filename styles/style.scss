@@ -330,6 +330,49 @@ img {
         display: inline-block;
     }
 
+    .nav-list.activated{
+        z-index: 888;
+        position: fixed;
+        background-color: #ffffff;
+        top: 13%;
+        right: 2%;
+        width: 375px;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        //box-shadow: -20px 100px 80px rgb(59, 59, 59);
+        transition:  .3s ease;
+        border-radius: 4px;
+
+        .nav-item{
+            .nav-link{
+                padding: 15px 0;
+                color:#2D314D;
+                font-size: 18px;
+                &::after{
+                    display: none;
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .open-btn.activated{
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: .4s ease;
+
+        img{
+            content: url('../images/toggler-close.svg');
+        }
+    }
+
     .generation-info{
         padding-top: 700px;
     }
@@ -406,7 +449,7 @@ img {
     }
 
     .generation-info{
-        padding-top: 550px;
+        padding-top: 580px;
     }
 
     .footer-list{
@@ -427,6 +470,10 @@ img {
     .footer-right{
         padding-top: 30px !important;
     }
+
+    .generation-info{
+        padding-top: 500px;
+    }
 }
 
 @media (max-width: 520px){
@@ -439,7 +486,7 @@ img {
     }
 
     .generation-info{
-        padding-top: 360px;
+        padding-top: 420px;
     }
 
     .choosing-list,
@@ -451,5 +498,9 @@ img {
 @media (max-width: 420px){
     .container{
         width: 95%;
+    }
+
+    .generation-info{
+        padding-top: 330px;
     }
 }
