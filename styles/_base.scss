@@ -1,0 +1,79 @@
+$linearGradient: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+$primaryColor: #30C88F;
+$secondaryColor: #2D314D;
+$textColor: #9597A5;
+
+$header1: 56px;
+$header2: 40px;
+$header3: 24px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-text{
+    color: $textColor;
+    font-size: 18px;
+    padding: 24px 0;
+    line-height: 1.5;
+}
+
+.secondary-text{
+    color: $textColor;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header1{
+    font-size: $header1;
+    font-weight: 200;
+    color: $secondaryColor;
+}
+
+.header2{
+    font-size: $header2;
+    font-weight: 200;
+    color: $secondaryColor;
+}
+
+.header3{
+    font-size: $header3;
+    font-weight: 200;
+    color: $secondaryColor;
+    padding: 20px 0;
+}

@@ -1,0 +1,88 @@
+// main section starts
+
+//generation section
+
+.generation{
+    background-color: #F2F2F2;
+    background-image: url('../images/hero-phones-desktop.png'), url('../images/hero-bg-desktop.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, right;   
+    padding: 250px 0;
+
+    .container{
+        @include flex();
+    }
+}
+
+.generation-info{
+    width: 40%;
+
+    .header1{
+        font-size: $header1;
+        color: $secondaryColor;
+        font-weight: 200;
+    }
+
+}
+
+
+//choosing section
+
+.choosing{
+    background-color: #F4F5F7;
+    padding: 100px 0;
+}
+
+.choosing-info{
+    width: 60%;
+}
+
+.choosing-list{
+    @include flex();
+    padding-top: 40px;
+}
+
+.choosing-item{
+    padding: 0 10px;
+}
+
+//articles section
+
+.articles{
+    background-color: #F2F2F2;
+    padding: 80px 0;
+}
+
+.articles-list{
+    @include flex();
+    padding-top: 40px;
+}
+
+.articles-item{
+    padding: 0 10px;
+}
+
+.article-author{
+    font-size: 10px;
+    color: $textColor;
+    padding-top: 20px;
+}
+
+.article-text{
+    font-size: 13px;
+    color: $textColor;
+    line-height: 1.5;
+}
+
+.article-secondary-text{
+    font-size: 16px;
+    color: $secondaryColor;
+    padding: 10px 0;
+}
+
+.article-secondary-link{
+    &:hover{
+        color: $primaryColor;
+        cursor: pointer;
+    }
+}
